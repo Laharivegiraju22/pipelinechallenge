@@ -11,6 +11,7 @@
 	<name>Spring Boot Atmosphere Sample</name>
 	<description>Spring Boot Atmosphere Sample</description>
 	<url>http://projects.spring.io/spring-boot/</url>
+        <packaging>war</packaging>
 	<organization>
 		<name>Pivotal Software, Inc.</name>
 		<url>http://www.spring.io</url>
