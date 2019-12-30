@@ -1,6 +1,6 @@
-FROM tomcat:8.0
+FROM openjdk:8
 
-RUN echo 'Deploying War on Server'
+RUN echo 'Deploying jar on Server'
 
 COPY /target/spring-boot-sample-atmosphere-1.4.0.BUILD-SNAPSHOT.jar usr/src/myapp
 
