@@ -2,7 +2,9 @@ FROM tomcat:8.0
 
 RUN echo 'Deploying War on Server'
 
-COPY target/spring-boot-sample-atmosphere-1.4.0.BUILD-SNAPSHOT.war usr/local/tomcat/webapps
+COPY target/spring-boot-sample-atmosphere-1.4.0.BUILD-SNAPSHOT.jar usr/local/tomcat/webapps/*.jar
 
 CMD ["catalina.sh", "run"]
+
+EXPOSE 8082
 
