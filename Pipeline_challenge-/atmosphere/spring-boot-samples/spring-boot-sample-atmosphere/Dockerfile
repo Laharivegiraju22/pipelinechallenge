@@ -6,4 +6,4 @@ COPY /target/spring-boot-sample-atmosphere-1.4.0.BUILD-SNAPSHOT.jar usr/local/to
 
 CMD ["catalina.sh", "run"]
 
-
+EXPOSE 8080
