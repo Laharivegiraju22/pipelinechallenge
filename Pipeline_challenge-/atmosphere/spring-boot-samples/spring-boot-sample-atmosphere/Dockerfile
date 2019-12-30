@@ -1,9 +1,13 @@
 FROM openjdk:8
 
-RUN echo 'Deploying jar on Server'
+RUN mkdir -p /usr/src/myapp
 
 COPY /target/spring-boot-sample-atmosphere-1.4.0.BUILD-SNAPSHOT.jar usr/src/myapp
 
-CMD ["java","-jar","spring-boot-sample-atmosphere-1.4.0.BUILD-SNAPSHOT.jar"]
+WORKDIR /usr/src/myapp
 
 EXPOSE 8080
+
+CMD ["java","-jar","spring-boot-sample-atmosphere-1.4.0.BUILD-SNAPSHOT.jar"]
+
+
